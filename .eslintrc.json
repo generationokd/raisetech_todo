@@ -1,0 +1,37 @@
+{
+  "env": {
+    "es2020": true,
+    "node": true,
+    "browser": true
+  },
+  // "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": [2, "always"],
+    "react/jsx-uses-react": [1],
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react-hooks/exhaustive-deps": "off",
+    // 関数戻り値の型未指定時の警告
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  }
+}

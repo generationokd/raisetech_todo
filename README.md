@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# TypeScript の Todo アプリ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+・処理概要
+Top ページのボタン（ユーザー１，２）によって、　初期データの内容が異なります。
+直接「/todo」を叩いた場合も、初期データ有。
+
+予定は必須入力。
+期限は省略可能。
+
+予定フィールド
+完了押下 ⇒ 完了フィールドへ
+削除 ⇒ ページ上から削除
+編集 ⇒ 予定、期限の編集が可能
+
+完了フィールド
+取消 ⇒ 予定フィールドへ
 
 ## Available Scripts
 
